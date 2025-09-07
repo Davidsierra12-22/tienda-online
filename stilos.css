@@ -209,8 +209,9 @@
 }
 .flecha{
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     border: 1px solid #888;
+    
 }
 
 .gallery1-titulo {
@@ -702,4 +703,66 @@ margin-top: 8px;
     width: 100px;
     height: 70px;
 
+}
+.gallery4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.about-us{
+    
+}
+.about-us h3{
+    font-size: 20px;
+    color: #888;
+}
+.about-us p{
+    font-size: 13px;
+    margin-top: 16px;
+}
+.contact{
+
+}
+.contact h3{
+    font-size: 20px;
+    color: #888;
+}
+.contact1{
+    display: flex;
+}
+.telefono{
+    width: 40px;
+    height: 40px;
+}
+.contact2{
+    display: flex;
+
+}
+.correo{
+    width: 40px;
+    height: 40px;
+}
+.contact3{
+    display: flex;
+
+}
+.skype{
+    width: 40px;
+    height: 40px;
+}
+.facebook{
+
+}
+.facebook h3{
+    font-size: 20px;
+    color: #888;
+}
+.custom-column{
+
+}
+.custom-column h3{
+    font-size: 20px;
+    color: #888;
 }
