@@ -139,14 +139,20 @@
 
 .taladro {
     display: flex;
-    margin-left: 10%;
+    padding-left: 10%;
+    background-image: url('ladrillos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.detalles-taladro{
+    margin-right: 140px;
 }
 
 .detalles-taladro h1 {
     margin: 0px;
     color: rgb(6, 76, 168);
     font-size: 33px;
-    margin-top: 40px;
+    margin-top: 48px;
 }
 
 .detalles-taladro h2 {
@@ -157,24 +163,26 @@
 
 .detalles-taladro p {
     font-size: 13px;
+    margin-top: 20px;
 
 }
 
 .taladroimg {
-    height: 92%;
+    height: 100%;
+    width: 100%;
 
 }
 
-.read {
+.detalles-taladro h4{
     background-color: #FFD400;
     color: rgb(6, 76, 168);
     width: 40%;
-    justify-content: center;
-    padding-left: 34px;
+    padding-left: 17px;
     padding-top: 6px;
     border-radius: 20px;
     height: 20px;
-    margin-top: 45px;
+    margin-top: 40px;
+    font-size: 13px;
 
 }
 
@@ -182,6 +190,7 @@
     display: grid;
     grid-template-columns: 2fr 8fr;
     padding-left: 5%;
+    margin-top: 20px;
 
 }
 
@@ -693,6 +702,7 @@ p {
     margin-left: 5%;
     margin-right: 50px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .htc {
@@ -728,9 +738,14 @@ p {
 .gallery4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+}
+
+.about-us {
+    margin-left: 15%;
 }
 
 .about-us h3 {
@@ -828,6 +843,10 @@ p {
     height: 87px;
 }
 
+.custom-column {
+    margin-right: 15%;
+}
+
 .custom-column p {
     font-size: 13px;
     margin-top: 16px;
@@ -837,4 +856,12 @@ p {
 .custom-column h3 {
     font-size: 20px;
     color: #888;
+}
+.gallery5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
 }
