@@ -94,6 +94,8 @@
 .candado {
     justify-content: flex-start;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
@@ -116,6 +118,11 @@
     color: white;
 
 
+}
+.con-flecha::after {
+  content: " \25be";
+  margin-left: 5px; 
+  cursor: pointer;
 }
 
 .item-menun1 {
@@ -517,7 +524,9 @@
 p {
     margin: 0px;
 }
-
+.rating5 .star {
+        color: gray;
+}
 .rating5 .star:nth-child(1),
 .rating5 .star:nth-child(2),
 .rating5 .star:nth-child(3),
@@ -532,7 +541,9 @@ p {
 .rating6 .star:nth-child(5) {
     color: gold;
 }
-
+.rating7 .star {
+    color: gray;
+}
 .rating7 .star:nth-child(1),
 .rating7 .star:nth-child(2),
 .rating7 .star:nth-child(3) {
@@ -944,4 +955,42 @@ p {
 
 .text-account {
     padding-left: 15px;
+}
+.gallery6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.pie{
+ font-size: 15px;
+ padding-left: 40px;
+}
+
+.Bancos {
+  display: flex;
+  gap: 6px; 
+   padding-right: 40px;
+}
+.santander{
+ width: 40px;
+ height: 30px;
+ border: 1px solid #E0E0E0;
+}
+.masterd{
+ width: 40px;
+ height: 30px;
+  border: 1px solid #E0E0E0;
+
+}
+.paypal{
+ width: 40px;
+ height: 30px;
+  border: 1px solid #E0E0E0;
+}
+.visa{
+ width: 40px;
+ height: 30px;
+  border: 1px solid #E0E0E0;
 }
