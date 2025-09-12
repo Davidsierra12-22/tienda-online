@@ -144,7 +144,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.detalles-taladro{
+
+.detalles-taladro {
     margin-right: 140px;
 }
 
@@ -173,7 +174,7 @@
 
 }
 
-.detalles-taladro h4{
+.detalles-taladro h4 {
     background-color: #FFD400;
     color: rgb(6, 76, 168);
     width: 40%;
@@ -857,11 +858,90 @@ p {
     font-size: 20px;
     color: #888;
 }
-.gallery5{
+
+.gallery5 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 20px;
     padding-bottom: 30px;
     border-bottom: 1px solid #E0E0E0;
     border-top: 1px solid #E0E0E0;
+}
+
+.information {
+    margin-left: 15%;
+
+}
+.information h3 {
+    font-size: 20px;
+    color: #888;
+}
+
+.information h3::after {
+  content: '';
+  display: block;
+  height: 1px; /* Grosor del borde */
+  width: 100px; /* Ancho del borde, ajusta a tu gusto */
+  background-color: #E0E0E0;
+  margin-top: 15px;
+}
+
+.text-information {
+    padding-left: 15px;
+}
+
+
+.custom-service h3 {
+    font-size: 20px;
+    color: #888;
+}
+.custom-service h3::after {
+  content: '';
+  display: block;
+  height: 1px; /* Grosor del borde */
+  width: 100px; /* Ancho del borde, ajusta a tu gusto */
+  background-color: #E0E0E0;
+  margin-top: 15px;
+}
+
+.text-service {
+    padding-left: 15px;
+}
+
+.extras h3 {
+    font-size: 20px;
+    color: #888;
+}
+.extras h3::after {
+  content: '';
+  display: block;
+  height: 1px; /* Grosor del borde */
+  width: 100px; /* Ancho del borde, ajusta a tu gusto */
+  background-color: #E0E0E0;
+  margin-top: 15px;
+}
+
+.text-extras {
+    padding-left: 15px;
+}
+
+.my-account {
+    margin-right: 15%;
+}
+
+.my-account h3 {
+    font-size: 20px;
+    color: #888;
+}
+.my-account h3::after {
+  content: '';
+  display: block;
+  height: 1px; /* Grosor del borde */
+  width: 100px; /* Ancho del borde, ajusta a tu gusto */
+  background-color: #E0E0E0;
+  margin-top: 15px;
+}
+
+.text-account {
+    padding-left: 15px;
 }
