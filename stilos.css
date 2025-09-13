@@ -119,10 +119,11 @@
 
 
 }
+
 .con-flecha::after {
-  content: " \25be";
-  margin-left: 5px; 
-  cursor: pointer;
+    content: " \25be";
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .item-menun1 {
@@ -524,9 +525,11 @@
 p {
     margin: 0px;
 }
+
 .rating5 .star {
-        color: gray;
+    color: gray;
 }
+
 .rating5 .star:nth-child(1),
 .rating5 .star:nth-child(2),
 .rating5 .star:nth-child(3),
@@ -541,9 +544,11 @@ p {
 .rating6 .star:nth-child(5) {
     color: gold;
 }
+
 .rating7 .star {
     color: gray;
 }
+
 .rating7 .star:nth-child(1),
 .rating7 .star:nth-child(2),
 .rating7 .star:nth-child(3) {
@@ -706,15 +711,31 @@ p {
 }
 
 .marcas {
+    display: grid;
+    grid-template-columns: 1.5% 97% 1.5%;
+    border: 1px solid #E0E0E0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.flecha3{
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.flecha4{
+    border: 1px solid #E0E0E0;
+    justify-content: center;
+}
+
+.marcas1 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    border: 1px solid #E0E0E0;
-    margin-left: 5%;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .htc {
@@ -883,18 +904,21 @@ p {
     margin-left: 15%;
 
 }
+
 .information h3 {
     font-size: 20px;
     color: #888;
 }
 
 .information h3::after {
-  content: '';
-  display: block;
-  height: 1px; /* Grosor del borde */
-  width: 100px; /* Ancho del borde, ajusta a tu gusto */
-  background-color: #E0E0E0;
-  margin-top: 15px;
+    content: '';
+    display: block;
+    height: 1px;
+    /* Grosor del borde */
+    width: 100px;
+    /* Ancho del borde, ajusta a tu gusto */
+    background-color: #E0E0E0;
+    margin-top: 15px;
 }
 
 .text-information {
@@ -906,13 +930,16 @@ p {
     font-size: 20px;
     color: #888;
 }
+
 .custom-service h3::after {
-  content: '';
-  display: block;
-  height: 1px; /* Grosor del borde */
-  width: 100px; /* Ancho del borde, ajusta a tu gusto */
-  background-color: #E0E0E0;
-  margin-top: 15px;
+    content: '';
+    display: block;
+    height: 1px;
+    /* Grosor del borde */
+    width: 100px;
+    /* Ancho del borde, ajusta a tu gusto */
+    background-color: #E0E0E0;
+    margin-top: 15px;
 }
 
 .text-service {
@@ -923,13 +950,16 @@ p {
     font-size: 20px;
     color: #888;
 }
+
 .extras h3::after {
-  content: '';
-  display: block;
-  height: 1px; /* Grosor del borde */
-  width: 100px; /* Ancho del borde, ajusta a tu gusto */
-  background-color: #E0E0E0;
-  margin-top: 15px;
+    content: '';
+    display: block;
+    height: 1px;
+    /* Grosor del borde */
+    width: 100px;
+    /* Ancho del borde, ajusta a tu gusto */
+    background-color: #E0E0E0;
+    margin-top: 15px;
 }
 
 .text-extras {
@@ -944,53 +974,62 @@ p {
     font-size: 20px;
     color: #888;
 }
+
 .my-account h3::after {
-  content: '';
-  display: block;
-  height: 1px; /* Grosor del borde */
-  width: 100px; /* Ancho del borde, ajusta a tu gusto */
-  background-color: #E0E0E0;
-  margin-top: 15px;
+    content: '';
+    display: block;
+    height: 1px;
+    /* Grosor del borde */
+    width: 100px;
+    /* Ancho del borde, ajusta a tu gusto */
+    background-color: #E0E0E0;
+    margin-top: 15px;
 }
 
 .text-account {
     padding-left: 15px;
 }
+
 .gallery6 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 25px;
-  margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
-.pie{
- font-size: 15px;
- padding-left: 40px;
+
+.pie {
+    font-size: 15px;
+    padding-left: 40px;
 }
 
 .Bancos {
-  display: flex;
-  gap: 6px; 
-   padding-right: 40px;
+    display: flex;
+    gap: 6px;
+    padding-right: 40px;
 }
-.santander{
- width: 40px;
- height: 30px;
- border: 1px solid #E0E0E0;
+
+.santander {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
 }
-.masterd{
- width: 40px;
- height: 30px;
-  border: 1px solid #E0E0E0;
+
+.masterd {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
 
 }
-.paypal{
- width: 40px;
- height: 30px;
-  border: 1px solid #E0E0E0;
+
+.paypal {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
 }
-.visa{
- width: 40px;
- height: 30px;
-  border: 1px solid #E0E0E0;
+
+.visa {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
 }
