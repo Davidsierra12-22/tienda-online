@@ -718,14 +718,16 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.flecha3{
+
+.flecha3 {
     cursor: pointer;
     font-size: 20px;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.flecha4{
+
+.flecha4 {
     border: 1px solid #E0E0E0;
     justify-content: center;
 }
@@ -1032,18 +1034,136 @@ p {
     height: 30px;
     border: 1px solid #E0E0E0;
 }
-@media (max-width: 720px){
- .barra4{
-    width: 250px;
- }
+
+@media (max-width: 720px) {
+    .barra4 {
+        width: 250px;
+    }
 }
-@media (max-width: 635px){
- .barra4{
-    width: 150px;
- }
+
+@media (max-width: 635px) {
+    .barra4 {
+        width: 150px;
+    }
+
+    .marcas1 {
+        gap: 50px;
+    }
+
 }
-@media (max-width: 600px){
-.menu{
-    margin: 0px;
+
+@media (max-width: 600px) {
+    .menu {
+        margin: 0px;
+    }
+
+    .detalles-taladro h4 {
+        width: 50%;
+    }
 }
+
+@media (max-width: 580px) {
+    .menu1 {
+        gap: 5px;
+    }
+    /* Resetea la galería para que sea una sola columna */
+    .gallery {
+        display: block !important;
+        padding-left: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* El contenedor secundario de la galería */
+    .gallery2 {
+        display: block !important;
+        margin-top: 20px !important;
+        grid-template-rows: auto !important;
+    }
+    
+    /* Nota: Se eliminó la regla `display: none !important;` para esta clase.
+       Ahora se mostrará por defecto, apilándose debajo de .gallery2.
+    .gallery1 {
+        // Esta sección ya no se ocultará
+    }
+    */
+
+    /* --- Aquí está la clave para el scroll horizontal en .articulos-pref --- */
+    .articulos-pref {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important; 
+        -webkit-overflow-scrolling: touch !important;
+        margin: 20px 0 !important;
+        gap: 10px !important;
+    }
+       /* Los elementos de la galería: los productos */
+    .pulidora,
+    .taladroama,
+    .taladrover,
+    .torrepc {
+        /* Evita que los elementos se encojan */
+        flex-shrink: 0 !important;
+        /* Mantiene el ancho fijo para generar el scroll */
+        width: 150px !important;
+    }
+    .gallery2{
+        margin-bottom: 30px;
+    }
+
+    
 }
+
+
+
+    @media (max-width: 550px) {
+        .barra4 {
+            width: 100px;
+        }
+
+        .encabezado {
+            padding: 0px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .detalles-taladro h4 {
+            width: 60%;
+        }
+
+        .taladro {
+            padding: 0px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .buscador {
+            margin: 0px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+    }
+
+    @media (max-width:460px) {
+
+
+        .menu {
+            flex-wrap: wrap;
+            height: 80px;
+        }
+
+        .item-menun,
+        .item-menun2 {
+            border-top: 1px solid #E0E0E0;
+            margin-left: 0px;
+            padding-left: 15px;
+        }
+    }
+
+    @media (max-width:430px) {
+        .detalles-taladro {
+            margin-right: 0px;
+        }
+    }
