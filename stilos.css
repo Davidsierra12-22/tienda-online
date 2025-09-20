@@ -94,6 +94,8 @@
 .candado {
     justify-content: flex-start;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
@@ -118,6 +120,12 @@
 
 }
 
+.con-flecha::after {
+    content: " \25be";
+    margin-left: 5px;
+    cursor: pointer;
+}
+
 .item-menun1 {
     background-color: #FFD400;
     justify-content: center;
@@ -139,14 +147,21 @@
 
 .taladro {
     display: flex;
-    margin-left: 10%;
+    padding-left: 10%;
+    background-image: url('ladrillos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.detalles-taladro {
+    margin-right: 140px;
 }
 
 .detalles-taladro h1 {
     margin: 0px;
     color: rgb(6, 76, 168);
     font-size: 33px;
-    margin-top: 40px;
+    margin-top: 48px;
 }
 
 .detalles-taladro h2 {
@@ -157,24 +172,26 @@
 
 .detalles-taladro p {
     font-size: 13px;
+    margin-top: 20px;
 
 }
 
 .taladroimg {
-    height: 92%;
+    height: 100%;
+    width: 100%;
 
 }
 
-.read {
+.detalles-taladro h4 {
     background-color: #FFD400;
     color: rgb(6, 76, 168);
     width: 40%;
-    justify-content: center;
-    padding-left: 34px;
+    padding-left: 17px;
     padding-top: 6px;
     border-radius: 20px;
     height: 20px;
-    margin-top: 45px;
+    margin-top: 40px;
+    font-size: 13px;
 
 }
 
@@ -182,17 +199,19 @@
     display: grid;
     grid-template-columns: 2fr 8fr;
     padding-left: 5%;
+    margin-top: 20px;
 
 }
 
 .gallery1 {
-    border: 1px solid rgba(0, 0, 0, 0.616);
+    border: 1px solid #E0E0E0;
     position: relative;
 
 
 
 }
-.flechas-container{
+
+.flechas-container {
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -202,20 +221,21 @@
     justify-content: center;
     width: 50px;
     height: 50px;
-    
 
-    
-    
+
+
+
 }
-.flecha{
+
+.flecha {
     cursor: pointer;
     font-size: 20px;
     border: 1px solid #888;
-    
+
 }
 
 .gallery1-titulo {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.616);
+    border-bottom: 1px solid #E0E0E0;
 
 }
 
@@ -241,7 +261,7 @@
 .mac {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.616);
+    border: 1px solid #E0E0E0;
     padding: 5px;
     margin-top: 5px;
 }
@@ -249,7 +269,7 @@
 .iphone {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.616);
+    border: 1px solid #E0E0E0;
     padding: 5px;
     margin-top: 5px;
 
@@ -258,7 +278,7 @@
 .cinema {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.616);
+    border: 1px solid #E0E0E0;
     padding: 5px;
     margin-top: 5px;
 }
@@ -266,7 +286,7 @@
 .tablet {
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.616);
+    border: 1px solid #E0E0E0;
     padding: 5px;
     margin-top: 5px;
 }
@@ -347,7 +367,7 @@
 .calefaccion {
     display: flex;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
     justify-items: center;
     align-items: center;
 }
@@ -369,7 +389,7 @@
 .luz {
     display: flex;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
     align-items: center;
 }
 
@@ -391,7 +411,7 @@
 .herramientas {
     display: flex;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
     align-items: center;
 }
 
@@ -412,7 +432,7 @@
 
 
 .barra {
-    border-bottom: 1px #888 solid;
+    border-bottom: 1px #E0E0E0 solid;
     margin-left: 2%;
     margin-right: 50px;
     display: flex;
@@ -461,7 +481,7 @@
 }
 
 .pulidora {
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
     width: 150px;
     justify-content: center;
     display: grid;
@@ -470,7 +490,7 @@
 }
 
 .taladroama {
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
     width: 150px;
     justify-content: center;
     display: grid;
@@ -479,7 +499,7 @@
 }
 
 .taladrover {
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
     width: 150px;
     justify-content: center;
     display: grid;
@@ -488,7 +508,7 @@
 }
 
 .torrepc {
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
     width: 150px;
     justify-content: center;
     display: grid;
@@ -506,6 +526,10 @@ p {
     margin: 0px;
 }
 
+.rating5 .star {
+    color: gray;
+}
+
 .rating5 .star:nth-child(1),
 .rating5 .star:nth-child(2),
 .rating5 .star:nth-child(3),
@@ -519,6 +543,10 @@ p {
 .rating6 .star:nth-child(4),
 .rating6 .star:nth-child(5) {
     color: gold;
+}
+
+.rating7 .star {
+    color: gray;
 }
 
 .rating7 .star:nth-child(1),
@@ -544,7 +572,7 @@ p {
     display: flex;
     height: 150px;
     width: 78%;
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
     align-items: center;
     margin-left: 50px;
     margin-top: 20px;
@@ -602,29 +630,32 @@ p {
 
 .boton-superpuesto P {
     color: rgb(6, 76, 168);
-    font-size: 15px
-    ;
+    font-size: 15px;
     padding: 0px;
 }
-.gallery3{
+
+.gallery3 {
     display: grid;
-    grid-template-rows:40% 60%;
+    grid-template-rows: 40% 60%;
 }
-.barra2{
-     border-bottom: 1px #888 solid;
+
+.barra2 {
+    border-bottom: 1px #E0E0E0 solid;
     margin-left: 2%;
     margin-right: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-    
+
 }
-.barra2 p{
+
+.barra2 p {
     font-size: 20px;
-    
+
 }
-.biblio{
+
+.biblio {
     display: grid;
     grid-template-columns: 15% 85%;
     width: 90%;
@@ -632,137 +663,507 @@ p {
     margin-top: 20px;
     align-items: center;
     justify-items: center;
-   
+
 
 }
-.persona{
+
+.persona {
     width: 80px;
     height: 80px;
-    border: 1px solid black;
+    border: 1px solid #E0E0E0;
 }
-.parrafo{
+
+.parrafo {
     display: flex;
 }
-.texto3{
+
+.texto3 {
     margin-left: 20px;
-  
-}
-.ceo{
-display: flex;
-margin-top: 8px;
-
 
 }
-.nombre{
+
+.ceo {
     display: flex;
-    gap:13px;
+    margin-top: 8px;
+
+
 }
-.nombre p{
+
+.nombre {
+    display: flex;
+    gap: 13px;
+}
+
+.nombre p {
     color: rgb(6, 76, 168);
     font-size: 18px;
 }
-.nombre span{
-    color:#888 ;
+
+.nombre span {
+    color: #888;
     font-size: 18px;
 }
-.barra4{
-    color:#ccc;
-    font-size: 1px;
+
+.barra4 {
+    border-bottom: 1px solid #E0E0E0;
+    width: 343px;
 }
-.marcas{
+
+.marcas {
+    display: grid;
+    grid-template-columns: 1.5% 97% 1.5%;
+    border: 1px solid #E0E0E0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flecha3 {
+    cursor: pointer;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.flecha4 {
+    border: 1px solid #E0E0E0;
+    justify-content: center;
+}
+
+.marcas1 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    border: 1px solid black;
-    margin-left: 5%;
-    margin-right: 50px;
-    margin-top: 20px;
 }
-.htc{
+
+.htc {
     width: 60px;
     height: 50px;
 
 }
-.apple{
+
+.apple {
     width: 70px;
     height: 59px;
 
 }
-.canon{
+
+.canon {
     width: 90px;
     height: 25px;
 
 }
-.sony{
+
+.sony {
     width: 70px;
     height: 12px;
 
 }
-.palm{
+
+.palm {
     width: 100px;
     height: 70px;
 
 }
-.gallery4{
+
+.gallery4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
 }
-.about-us{
-    
+
+.about-us {
+    margin-left: 20%;
 }
-.about-us h3{
+
+.about-us h3 {
     font-size: 20px;
     color: #888;
 }
-.about-us p{
+
+.about-us p {
     font-size: 13px;
     margin-top: 16px;
 }
-.contact{
 
-}
-.contact h3{
+.contact h3 {
     font-size: 20px;
     color: #888;
+    margin-left: 15px;
 }
-.contact1{
+
+.contact1 {
     display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 7px;
+    margin-left: 15px;
+
 }
-.telefono{
+
+.contacto-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-texto p {
+    margin-top: 5px;
+}
+
+.telefono {
     width: 40px;
     height: 40px;
 }
-.contact2{
-    display: flex;
 
-}
-.correo{
+.correo {
     width: 40px;
     height: 40px;
 }
-.contact3{
-    display: flex;
 
-}
-.skype{
+.skype {
     width: 40px;
     height: 40px;
 }
-.facebook{
 
-}
-.facebook h3{
+.facebook h3 {
     font-size: 20px;
     color: #888;
 }
-.custom-column{
+
+.face {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 5px;
+}
+
+.face-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.face-text p {
+    font-size: 13px;
+    color: rgb(6, 76, 168);
 
 }
-.custom-column h3{
+
+.logo-oro {
+    width: 40px;
+    height: 40px;
+}
+
+.like {
+    width: 50px;
+    height: 20px;
+}
+
+.book {
+    margin-top: 10px;
+}
+
+.book p {
+    font-size: 12px;
+}
+
+.people {
+    width: 193px;
+    height: 87px;
+}
+
+.custom-column {
+    margin-right: 15%;
+}
+
+.custom-column p {
+    font-size: 13px;
+    margin-top: 16px;
+
+}
+
+.custom-column h3 {
     font-size: 20px;
     color: #888;
 }
+
+.gallery5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
+}
+
+.information {
+    margin-left: 20%;
+
+}
+
+.information h3 {
+    font-size: 20px;
+    color: #888;
+}
+
+.information h3::after {
+    content: '';
+    display: block;
+    height: 1px;
+    /* Grosor del borde */
+    width: 100px;
+    /* Ancho del borde, ajusta a tu gusto */
+    background-color: #E0E0E0;
+    margin-top: 15px;
+}
+
+.text-information {
+    padding-left: 15px;
+}
+
+
+.custom-service h3 {
+    font-size: 20px;
+    color: #888;
+}
+
+.custom-service h3::after {
+    content: '';
+    display: block;
+    height: 1px;
+    /* Grosor del borde */
+    width: 100px;
+    /* Ancho del borde, ajusta a tu gusto */
+    background-color: #E0E0E0;
+    margin-top: 15px;
+}
+
+.text-service {
+    padding-left: 15px;
+}
+
+.extras h3 {
+    font-size: 20px;
+    color: #888;
+}
+
+.extras h3::after {
+    content: '';
+    display: block;
+    height: 1px;
+    /* Grosor del borde */
+    width: 100px;
+    /* Ancho del borde, ajusta a tu gusto */
+    background-color: #E0E0E0;
+    margin-top: 15px;
+}
+
+.text-extras {
+    padding-left: 15px;
+}
+
+.my-account {
+    margin-right: 15%;
+}
+
+.my-account h3 {
+    font-size: 20px;
+    color: #888;
+}
+
+.my-account h3::after {
+    content: '';
+    display: block;
+    height: 1px;
+    /* Grosor del borde */
+    width: 100px;
+    /* Ancho del borde, ajusta a tu gusto */
+    background-color: #E0E0E0;
+    margin-top: 15px;
+}
+
+.text-account {
+    padding-left: 15px;
+}
+
+.gallery6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.pie {
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.Bancos {
+    display: flex;
+    gap: 6px;
+    padding-right: 40px;
+}
+
+.santander {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
+}
+
+.masterd {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
+
+}
+
+.paypal {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
+}
+
+.visa {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #E0E0E0;
+}
+
+@media (max-width: 720px) {
+    .barra4 {
+        width: 250px;
+    }
+}
+
+@media (max-width: 635px) {
+    .barra4 {
+        width: 150px;
+    }
+
+    .marcas1 {
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .menu {
+        margin: 0px;
+    }
+
+    .detalles-taladro h4 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 580px) {
+    .menu1 {
+        gap: 5px;
+    }
+    /* Resetea la galería para que sea una sola columna */
+    .gallery {
+        display: block !important;
+        padding-left: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* El contenedor secundario de la galería */
+    .gallery2 {
+        display: block !important;
+        margin-top: 20px !important;
+        grid-template-rows: auto !important;
+    }
+    
+    /* Nota: Se eliminó la regla `display: none !important;` para esta clase.
+       Ahora se mostrará por defecto, apilándose debajo de .gallery2.
+    .gallery1 {
+        // Esta sección ya no se ocultará
+    }
+    */
+
+    /* --- Aquí está la clave para el scroll horizontal en .articulos-pref --- */
+    .articulos-pref {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important; 
+        -webkit-overflow-scrolling: touch !important;
+        margin: 20px 0 !important;
+        gap: 10px !important;
+    }
+       /* Los elementos de la galería: los productos */
+    .pulidora,
+    .taladroama,
+    .taladrover,
+    .torrepc {
+        /* Evita que los elementos se encojan */
+        flex-shrink: 0 !important;
+        /* Mantiene el ancho fijo para generar el scroll */
+        width: 150px !important;
+    }
+    .gallery2{
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+
+
+    @media (max-width: 550px) {
+        .barra4 {
+            width: 100px;
+        }
+
+        .encabezado {
+            padding: 0px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .detalles-taladro h4 {
+            width: 60%;
+        }
+
+        .taladro {
+            padding: 0px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .buscador {
+            margin: 0px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+    }
+
+    @media (max-width:460px) {
+
+
+        .menu {
+            flex-wrap: wrap;
+            height: 80px;
+        }
+
+        .item-menun,
+        .item-menun2 {
+            border-top: 1px solid #E0E0E0;
+            margin-left: 0px;
+            padding-left: 15px;
+        }
+    }
+
+    @media (max-width:430px) {
+        .detalles-taladro {
+            margin-right: 0px;
+        }
+    }
